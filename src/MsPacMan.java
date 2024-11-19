@@ -22,7 +22,7 @@ public class MsPacMan {
     public static void main(String[] args) throws Exception {
         String agentClass = null;
         String agentId = null;
-        int level = 1;
+        int level = 16;
         String resultdir = null;
         int seed = 0;
         boolean seedSpecified = false;

@@ -42,7 +42,7 @@ Here is the [documentation](https://ksvi.mff.cuni.cz/~dingle/2024-5/ai_games/msp
 
 The package controllers.pacman.examples contains several sample agents, which you may wish to study as a starting point.
 
-You can enhance the MyAgent class to build a custom agent.  On each tick, the game will call your implementation of the tick() method, where you can decide which action Ms. Pac-Man should take.
+You can enhance the AStarAgent class to build a custom agent.  On each tick, the game will call your implementation of the tick() method, where you can decide which action Ms. Pac-Man should take.
 
 The Game interface has everything you need to find about the game state. Note that
 
@@ -57,27 +57,27 @@ For more details, see the [API documentation](https://ksvi.mff.cuni.cz/~dingle/2
 To see your agent play the game, run
 
 ```
-$ ./mspac MyAgent
+$ ./mspac AStarAgent
 ```
 
 ## Evaluating your agent
 
-The -sim option will run a series of random games without visualization, and will report statistics about an agent's average performance over these games.  For example, to run 20 games of MyAgent:
+The -sim option will run a series of random games without visualization, and will report statistics about an agent's average performance over these games.  For example, to run 20 games of AStarAgent:
 
 ```
-$ ./mspac MyAgent -sim 20
+$ ./mspac AStarAgent -sim 20
 ```
 
 If you want to see the outcome of each individual simulated game, add the -v (verbose) option:
 
 ```
-$ ./mspac MyAgent -sim 20 -v
+$ ./mspac AStarAgent -sim 20 -v
 ```
 
 In this output you will see the random seed that was used for each game.  If you'd like to repeat any individual game, you can rerun that game with its particular seed.  For example, suppose that you see that your agent did poorly in the game with seed 12.  You can rerun that game like this:
 
 ```
-$ ./mspac MyAgent -seed 12
+$ ./mspac AStarAgent -seed 12
 ```
 
 
